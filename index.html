@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>白紙</title>
+</head>
+<body>
+
+<img src="1.png" id="Gazou" onClick="Go();"><br>
+
+<script>
+
+window.document.bgColor='LightGray';
+
+number = 1;
+
+function Go() {
+	number++;
+	if (number>55) { number = 1; }
+	document.getElementById("Gazou").src=number+".png";
+}
+
+</script>
+
+</body>
+</html>
